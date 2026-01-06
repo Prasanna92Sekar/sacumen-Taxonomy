@@ -37,6 +37,37 @@ Do NOT focus on:
 - Mapping every possible attack
 - Implementation logic
 
+
+## Example: From Raw Security Data to Labeled Intelligence
+
+
+**Raw security event (vendor-specific):**
+
+```json
+{
+  "vendor": "cloudflare",
+  "metric": "firewall.requests.blocked",
+  "ip": "203.0.113.5",
+  "count": 17,
+  "timestamp": "2026-01-06T10:01:12Z"
+}   
+
+```
+
+**Labeled output using this taxonomy:**
+
+```
+{
+  "category": "network_security",
+  "event_type": "http_request_blocked",
+  "risk_level": "medium",
+  "attack_type": null,
+  "entity_type": "ip_address",
+  "confidence": 0.92,
+  "label_source": "rule"
+}
+```
+
 ## Status
-Current version: SCIT-v0.1  
+Current version: ST-v0.1  
 This version is intended for **internal review and iteration**.
