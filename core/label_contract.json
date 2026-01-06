@@ -1,0 +1,21 @@
+{
+  "required_fields": [
+    "event_type",
+    "category",
+    "risk_level"
+  ],
+  "optional_fields": [
+    "attack_type",
+    "entity_type"
+  ],
+  "constraints": {
+    "event_type": "MUST belong to its category",
+    "risk_level": "MUST NOT imply attack",
+    "attack_type": "MAY be null",
+    "entity_type": "MAY be multiple"
+  },
+  "versioning": {
+    "taxonomy_version_required": true,
+    "backward_compatible": true
+  }
+}

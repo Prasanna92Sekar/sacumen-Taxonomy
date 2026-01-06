@@ -1,0 +1,6 @@
+[
+  "firewall_allow",
+  "firewall_deny",
+  "port_scan_detected",
+  "ssh_connection_attempt"
+]

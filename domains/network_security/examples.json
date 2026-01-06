@@ -1,0 +1,13 @@
+{
+  "raw_log": {
+    "action": "BLOCK",
+    "dst_port": 22,
+    "src_ip": "45.33.12.10"
+  },
+  "labeled_event": {
+    "event_type": "firewall_deny",
+    "category": "network_security",
+    "risk_level": "high",
+    "attack_type": "ssh_bruteforce"
+  }
+}

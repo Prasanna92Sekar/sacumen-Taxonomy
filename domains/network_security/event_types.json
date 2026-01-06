@@ -1,0 +1,5 @@
+[
+  "http_request",
+  "http_auth_failure",
+  "rate_limit_triggered"
+]
